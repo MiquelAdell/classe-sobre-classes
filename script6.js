@@ -1,12 +1,15 @@
+//ho fiquem tot dins d'una classe. Ja queda més endreçadet
+//però encara hi ha coses que podem fer millor…
 class Cotxe {
 
     constructor() {
-        this.canvas = document.getElementById('canvas')
-        this.canvas.innerHTML = "";
+        var canvas = document.getElementById('canvas')
+        canvas.innerHTML = "";
     
+        //aquí seleccionem la imatge
         var imatge = document.createElement('img');
         imatge.src = 'cotxe.webp';
-        this.canvas.appendChild(imatge);
+        canvas.appendChild(imatge);
     }
 
     encenMotor(){

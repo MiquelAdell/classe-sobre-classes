@@ -1,3 +1,4 @@
+//ara volem les dues coses
 function inicialitzaMoto(){
     canvas = document.getElementById('canvas')
     canvas.innerHTML = "";

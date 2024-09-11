@@ -1,3 +1,5 @@
+//la classe vehicle ens serveix per cotxes i motos
+//què pass amb nom?
 class Vehicle {
 
     constructor(nom) {
@@ -16,15 +18,12 @@ class Vehicle {
 
 }
 
+function clickBotoCotxe(){
+    var cotxe = new Vehicle('cotxe');
+    cotxe.encenMotor();
+}
 
-function ready(){
-    document.getElementById('cotxe').addEventListener('click',function(){
-        var cotxe = new Vehicle('cotxe');
-        cotxe.encenMotor();
-    });
-
-    document.getElementById('moto').addEventListener('click',function(){
-        var moto = new Vehicle('moto');
-        moto.encenMotor();
-    });
+function clickBotoMoto(){
+    var moto = new Vehicle('moto');
+    moto.encenMotor();
 }

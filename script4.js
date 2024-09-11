@@ -1,3 +1,4 @@
+//però no volem repetir codi
 function inicialitzaVehicle(nom){
     canvas = document.getElementById('canvas')
     canvas.innerHTML = "";
@@ -13,8 +14,4 @@ function clickBotoCotxe(){
 
 function clickBotoMoto(){
     inicialitzaVehicle('moto');
-}
-
-function ready(){
-    // buit    
 }

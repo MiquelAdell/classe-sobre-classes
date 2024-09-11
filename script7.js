@@ -1,3 +1,4 @@
+//fem servir les variables de la classe
 class Cotxe {
 
     constructor() {
@@ -10,6 +11,7 @@ class Cotxe {
     }
 
     encenMotor(){
+        //d'on ha sortit aquest "this.imatge"? perquè s'en recorda?
         this.imatge.classList.add("ences");
     }
 
@@ -17,8 +19,6 @@ class Cotxe {
 
 
 function ready(){
-    document.getElementById('cotxe').addEventListener('click',function(){
-        var cotxe = new Cotxe();
-        cotxe.encenMotor();
-    });
+    var cotxe = new Cotxe();
+    cotxe.encenMotor();
 }
