@@ -12,11 +12,15 @@ function say(what){
     element.innerHTML = what;
 }
 
+function netejaCarretera(){
+    // carretera = document.getElementById('carretera')
+    // carretera.innerHTML = "";
+}
 
 document.addEventListener("DOMContentLoaded", function(e) {
     
     document.body.innerHTML = `<div class="holder">
-            <div id="canvas"></div> 
+            <div id="carretera"></div> 
             <div class="buttons">
                 <button id="cotxe">Cotxe</button>
                 <button id="moto">Moto</button>

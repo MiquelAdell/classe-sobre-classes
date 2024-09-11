@@ -1,20 +1,18 @@
 //ara fem que es moguin. 
 //Encés funciona perquè seleccionem la primera imatge
 //que trobem però no en sabem res més
-
 function inicialitzaVehicle(nom){
-    canvas = document.getElementById('canvas')
-    canvas.innerHTML = "";
+    netejaCarretera();
 
     var imatge = document.createElement('img');
     imatge.src = nom+'.webp';
-    canvas.appendChild(imatge);
+    carretera.appendChild(imatge);
 }
 
 function encenMotor(){
-    //això selecciona la primera imatge que tenim al canvas
+    //això selecciona la primera imatge que tenim al carretera
     //ja sigui moto o cotxe
-    var imatge = document.querySelectorAll('#canvas img')[0]
+    var imatge = document.querySelectorAll('#carretera img')[2];
     imatge.classList.add("ences");
 }
 

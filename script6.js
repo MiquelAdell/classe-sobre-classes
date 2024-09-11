@@ -3,18 +3,17 @@
 class Cotxe {
 
     constructor() {
-        var canvas = document.getElementById('canvas')
-        canvas.innerHTML = "";
+        netejaCarretera();
     
         //aquí seleccionem la imatge
         var imatge = document.createElement('img');
         imatge.src = 'cotxe.webp';
-        canvas.appendChild(imatge);
+        carretera.appendChild(imatge);
     }
 
     encenMotor(){
         //hem de tornar a seleccionar la imatge
-        var imatge = document.querySelectorAll('#canvas img')[0];
+        var imatge = document.querySelectorAll('#carretera img')[0];
         imatge.classList.add("ences");
     }
 

@@ -1,11 +1,10 @@
 //però no volem repetir codi
 function inicialitzaVehicle(nom){
-    canvas = document.getElementById('canvas')
-    canvas.innerHTML = "";
+    netejaCarretera();
 
     var imatge = document.createElement('img');
     imatge.src = nom+'.webp';
-    canvas.appendChild(imatge);
+    carretera.appendChild(imatge);
 }
 
 function clickBotoCotxe(){

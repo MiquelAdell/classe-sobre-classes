@@ -2,12 +2,11 @@
 class Cotxe {
 
     constructor() {
-        this.canvas = document.getElementById('canvas')
-        this.canvas.innerHTML = "";
+        netejaCarretera();
     
         this.imatge = document.createElement('img');
         this.imatge.src = 'cotxe.webp';
-        this.canvas.appendChild(this.imatge);
+        this.carretera.appendChild(this.imatge);
     }
 
     encenMotor(){
