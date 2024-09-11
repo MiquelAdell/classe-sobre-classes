@@ -64,5 +64,15 @@ animation-iteration-count: infinite;
 }
 
 .disabled {
-    opacity: 50%;
+    display: none;
+}
+
+#balloon {
+    position: fixed;
+    top: 50%;
+    margin-top:-20rem;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
